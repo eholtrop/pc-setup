@@ -7,7 +7,6 @@ if [[ $? != 0 ]] ; then
     # Install Homebrew
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 else
-
     brew update
 fi
 
@@ -43,6 +42,10 @@ caskInstall jetbrains-toolbox
 install scrcpy
 caskInstall visual-studio-code
 caskInstall gitkraken
+install rbenv ruby-build
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zprofile
+echo 'eval "$(rbenv init -)"' >> ~/.zprofile
+
 
 # other stuff
 caskInstall discord
@@ -58,6 +61,7 @@ caskInstall menubarx
 caskInstall cheatsheet
 # open -a "cheatsheet"hidden
 caskInstall alfred
+caskInstall duet
 
 
 echo "
