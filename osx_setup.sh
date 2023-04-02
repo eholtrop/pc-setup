@@ -62,6 +62,7 @@ caskInstall cheatsheet
 # open -a "cheatsheet"hidden
 caskInstall alfred
 caskInstall duet
+caskInstall soundsource
 
 
 echo "
