@@ -63,6 +63,7 @@ caskInstall cheatsheet
 caskInstall alfred
 caskInstall duet
 caskInstall soundsource
+caskInstall contexts
 
 
 echo "
