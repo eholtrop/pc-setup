@@ -35,7 +35,18 @@ open $HOME
 # tools
 caskInstall 1password
 caskInstall parsec
-caskInstall google-chrome
+caskInstall alfred
+caskInstall firefox
+caskInstall duet
+caskInstall soundsource
+caskInstall contexts
+caskInstall bettertouchtool
+caskInstall karabiner-elements
+caskInstall notion-calendar
+caskInstall notion
+caskInstall elgato-streak-deck
+caskInstall spotify
+caskInstall discord
 
 # programming
 caskInstall jetbrains-toolbox
@@ -52,18 +63,10 @@ caskInstall discord
 caskInstall signal
 
 # open these
-caskInstall hiddenbar
-# sudo open -a "Hidden Bar"
 caskInstall rectangle
-# open -a "rectangle"
-caskInstall menubarx
-# open -a "menubarx"
+open -a "rectangle"
 caskInstall cheatsheet
-# open -a "cheatsheet"hidden
-caskInstall alfred
-caskInstall duet
-caskInstall soundsource
-caskInstall contexts
+open -a "cheatsheet"hidden
 
 
 echo "
