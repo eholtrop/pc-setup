@@ -7,6 +7,7 @@ winget install voidtools.Everything
 winget install Google.Chrome
 winget install Microsoft.PowerToys
 winget install REALiX.HWiNFO
+winget install localsend
 
 # Programming
 winget install OBSProject.OBSStudio
