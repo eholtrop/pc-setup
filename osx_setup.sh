@@ -11,7 +11,7 @@ else
 fi
 
 install () {
-    brew list $1 || brew install  $1
+    brew list $1 || brew install $1
 }
 
 caskInstall () {
@@ -47,6 +47,11 @@ caskInstall notion
 caskInstall elgato-streak-deck
 caskInstall spotify
 caskInstall discord
+caskInstall beeper
+
+# airdrop alternative
+brew tap localsend/localsend
+install localsend
 
 # programming
 caskInstall jetbrains-toolbox
