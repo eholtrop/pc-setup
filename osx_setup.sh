@@ -34,7 +34,6 @@ open $HOME
 
 # tools
 caskInstall 1password
-caskInstall parsec
 caskInstall alfred
 caskInstall firefox
 caskInstall duet
@@ -42,12 +41,12 @@ caskInstall soundsource
 caskInstall contexts
 caskInstall bettertouchtool
 caskInstall karabiner-elements
-caskInstall notion-calendar
-caskInstall notion
 caskInstall elgato-streak-deck
 caskInstall spotify
 caskInstall discord
 caskInstall beeper
+caskInstall obs
+caskInstall zen-browser
 
 # airdrop alternative
 brew tap localsend/localsend
@@ -71,8 +70,9 @@ caskInstall signal
 caskInstall rectangle
 open -a "rectangle"
 caskInstall cheatsheet
-open -a "cheatsheet"hidden
+# open -a "cheatsheet"hidden
 
+curl -s "https://get.sdkman.io" | bash
 
 echo "
 
@@ -83,5 +83,6 @@ echo REMEMBER TO INSTALL
 echo Dropover
 echo ---------------
 echo https://dropoverapp.com/
-
 "
+
+source "/Users/evanholtrop/.sdkman/bin/sdkman-init.sh"
