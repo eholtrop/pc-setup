@@ -1,12 +1,14 @@
-#!/bin/bash
+#!/bin/zsh
 
 xcode-select --install
 
-which -s brew
-if [[ $? != 0 ]] ; then
-    # Install Homebrew
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+if [[ $(command -v brew) == "" ]]; then
+    echo "Installing Hombrew"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    export PATH="/opt/homebrew/bin:$PATH" >> ~/.zshrc
+    brew update
 else
+    echo "Updating Homebrew"
     brew update
 fi
 
@@ -41,12 +43,12 @@ caskInstall soundsource
 caskInstall contexts
 caskInstall bettertouchtool
 caskInstall karabiner-elements
-caskInstall elgato-streak-deck
+caskInstall elgato-stream-deck
 caskInstall spotify
 caskInstall discord
-caskInstall beeper
 caskInstall obs
 caskInstall zen-browser
+caskInstall wezterm
 
 # airdrop alternative
 brew tap localsend/localsend
@@ -57,20 +59,17 @@ caskInstall jetbrains-toolbox
 install scrcpy
 caskInstall visual-studio-code
 caskInstall gitkraken
-install rbenv ruby-build
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zprofile
-echo 'eval "$(rbenv init -)"' >> ~/.zprofile
 
 
 # other stuff
 caskInstall discord
-caskInstall signal
+caskInstall beeper
+# bambu-studio
 
 # open these
 caskInstall rectangle
 open -a "rectangle"
 caskInstall cheatsheet
-# open -a "cheatsheet"hidden
 
 curl -s "https://get.sdkman.io" | bash
 
