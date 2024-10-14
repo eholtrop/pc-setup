@@ -49,6 +49,8 @@ caskInstall discord
 caskInstall obs
 caskInstall zen-browser
 caskInstall wezterm
+caskInstall readdle-spark
+caskInstall obsidian
 
 # airdrop alternative
 brew tap localsend/localsend
@@ -64,7 +66,7 @@ caskInstall gitkraken
 # other stuff
 caskInstall discord
 caskInstall beeper
-# bambu-studio
+caskInstall bambu-studio
 
 # open these
 caskInstall rectangle
