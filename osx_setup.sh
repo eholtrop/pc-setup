@@ -36,16 +36,25 @@ open $HOME
 
 # tools
 caskInstall 1password
+
 caskInstall alfred
+git clone https://github.com/dracula/alfred
+open /alfred/Dracula.alfredappearance
+rm -rf alfred
+
 caskInstall firefox
 caskInstall duet
 caskInstall soundsource
 caskInstall contexts
+open /Applications/Contexts.app
 caskInstall bettertouchtool
+open /Applications/BetterTouchTool.app
 caskInstall karabiner-elements
 caskInstall elgato-stream-deck
 caskInstall spotify
+open /Applications/Spotify.app
 caskInstall discord
+open /Applications/Discord.app
 caskInstall obs
 caskInstall zen-browser
 caskInstall wezterm
