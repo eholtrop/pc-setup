@@ -20,9 +20,12 @@ caskInstall () {
     brew list $1 || brew install --cask $1
 }
 
-# OSX Settings
+appendZshrc () {
+    grep -qxF $1 ~/.zshrc || echo $1 >> ~/.zshrc
+    source ~/.zshrc
+}
 
-# show all hidden files
+# OSX Settings
 defaults write com.apple.finder AppleShowAllFiles -bool true
 defaults write com.apple.finder "AppleShowAllFiles" -bool "true" && killall Finder
 defaults write com.apple.dock "tilesize" -int "36" && killall Dock
@@ -30,11 +33,37 @@ defaults write com.apple.dock "autohide" -bool "true" && killall Dock
 defaults write com.apple.dock "show-recents" -bool "false" && killall Dock
 defaults write com.apple.dock "static-only" -bool "true" && killall Dock
 
-# Create and Move Projects folder in HOME
+# Create Projects folder in home
 mkdir $HOME/Projects
-open $HOME
 
-# tools
+# brew
+
+caskInstall wezterm
+install powerlevel10k
+install font-meslo-lg-nerd-font
+install zsh-autosuggestions
+install zsh-syntax-highlighting
+
+# better cd
+install zoxide
+appendZshrc "eval \"$(zoxide init zsh)\""
+appendZshrc "alias cd=\"z\""
+
+# better ls
+install eza
+appendZshrc "alias ls=\"eza --icons=always\""
+
+# fix history
+appendZshrc "HISTFILE=$HOME/.zhistory"
+appendZshrc "SAVEHIST=1000"
+appendZshrc "HISTSIZE=999"
+appendZshrc "setopt share_history"
+appendZshrc "setopt hist_expire_dups_first"
+appendZshrc "setopt hist_ignore_dups"
+appendZshrc "setopt hist_verify"
+appendZshrc "bindkey '^[[A' history-search-backward"
+appendZshrc "bindkey '^[[B' history-search-forward"
+
 caskInstall 1password
 
 caskInstall alfred
@@ -57,9 +86,9 @@ caskInstall discord
 open /Applications/Discord.app
 caskInstall obs
 caskInstall zen-browser
-caskInstall wezterm
 caskInstall readdle-spark
 caskInstall obsidian
+
 
 # airdrop alternative
 brew tap localsend/localsend
