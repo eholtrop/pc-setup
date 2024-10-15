@@ -69,6 +69,10 @@ install localsend
 caskInstall jetbrains-toolbox
 install scrcpy
 caskInstall visual-studio-code
+caskInstall zed
+git clone https://github.com/dracula/zed.git
+cp zed/themes/dracula.json ~/.config/zed/themes
+rm -rf zed
 caskInstall gitkraken
 
 
@@ -76,6 +80,7 @@ caskInstall gitkraken
 caskInstall discord
 caskInstall beeper
 caskInstall bambu-studio
+caskInstall google-drive
 
 # open these
 caskInstall rectangle
