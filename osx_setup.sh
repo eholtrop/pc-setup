@@ -39,14 +39,19 @@ mkdir $HOME/Projects
 # brew
 
 caskInstall wezterm
+rm ~/.wezterm.lua
+cp .wezterm.lua ~/
+
 install powerlevel10k
 install font-meslo-lg-nerd-font
 install zsh-autosuggestions
+appendZshrc "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 install zsh-syntax-highlighting
+appendZshrc "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 # better cd
 install zoxide
-appendZshrc "eval \"$(zoxide init zsh)\""
+appendZshrc "eval \"\$(zoxide init zsh)\""
 appendZshrc "alias cd=\"z\""
 
 # better ls

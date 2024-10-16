@@ -8,6 +8,7 @@ winget install Google.Chrome
 winget install Microsoft.PowerToys
 winget install REALiX.HWiNFO
 winget install localsend
+winget install ajeetdsouza.zoxide
 
 # Programming
 winget install OBSProject.OBSStudio
