@@ -51,7 +51,6 @@ appendZshrc "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-hi
 
 # better cd
 install zoxide
-appendZshrc "eval \"\$(zoxide init zsh)\""
 appendZshrc "alias cd=\"z\""
 
 # better ls
@@ -135,3 +134,6 @@ echo https://dropoverapp.com/
 "
 
 source "/Users/evanholtrop/.sdkman/bin/sdkman-init.sh"
+
+# this must be last in zshrc
+appendZshrc "eval \"\$(zoxide init zsh)\""
