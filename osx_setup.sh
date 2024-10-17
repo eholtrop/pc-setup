@@ -91,8 +91,11 @@ open /Applications/Discord.app
 caskInstall obs
 caskInstall zen-browser
 caskInstall readdle-spark
+
 caskInstall obsidian
 
+caskInstall nikitabobko/tap/aerospace
+ln -s aerospace.toml ~/.aerospace.toml
 
 # airdrop alternative
 brew tap localsend/localsend
