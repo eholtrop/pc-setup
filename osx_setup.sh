@@ -17,7 +17,8 @@ install () {
 }
 
 caskInstall () {
-    brew list $1 || brew install --cask $1
+    # if not installed, install, if 2nd parameter provided, open it
+    brew list $1 || (brew install --cask $1 && if [$2 -eq 0]; then open $2; fi)
 }
 
 appendZshrc () {
@@ -78,19 +79,20 @@ rm -rf alfred
 caskInstall firefox
 caskInstall duet
 caskInstall soundsource
-caskInstall contexts
-open /Applications/Contexts.app
-caskInstall bettertouchtool
-open /Applications/BetterTouchTool.app
+caskInstall contexts /Applications/Contexts.app
+caskInstall bettertouchtool /Applications/BetterTouchTool.app
 caskInstall karabiner-elements
 caskInstall elgato-stream-deck
-caskInstall spotify
-open /Applications/Spotify.app
-caskInstall discord
-open /Applications/Discord.app
+caskInstall spotify /Applications/Spotify.app
+caskInstall discord /Applications/Discord.app
 caskInstall obs
 caskInstall zen-browser
 caskInstall readdle-spark
+caskInstall beeper
+caskInstall bambu-studio
+caskInstall google-drive
+caskInstall rectangle /Applications/Rectangle.app
+caskInstall cheatsheet /Applications/CheatSheet.app
 
 caskInstall obsidian
 
@@ -113,15 +115,8 @@ caskInstall gitkraken
 
 
 # other stuff
-caskInstall discord
-caskInstall beeper
-caskInstall bambu-studio
-caskInstall google-drive
 
 # open these
-caskInstall rectangle
-open -a "rectangle"
-caskInstall cheatsheet
 
 curl -s "https://get.sdkman.io" | bash
 
