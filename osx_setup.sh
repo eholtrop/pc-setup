@@ -97,7 +97,7 @@ caskInstall cheatsheet /Applications/CheatSheet.app
 caskInstall obsidian
 
 caskInstall nikitabobko/tap/aerospace
-ln -s aerospace.toml ~/.aerospace.toml
+ln -sf aerospace.toml ~/.aerospace.toml
 
 # airdrop alternative
 brew tap localsend/localsend
