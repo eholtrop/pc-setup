@@ -13,6 +13,10 @@ winget install ajeetdsouza.zoxide
 # Programming
 winget install OBSProject.OBSStudio
 
+# terminal
+winget install wez.wezterm
+winget install eza-community.eza
+
 # Streaming
 winget install Jetbrains.Toolbox
 winget install Axosoft.GitKraken
