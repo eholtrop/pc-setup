@@ -31,6 +31,9 @@ winget install Discord.Discord
 winget install Spotify.Spotify
 winget install Valve.Steam
 
+winget install LGUG2Z.komorebi
+winget install LGUG2Z.wkhd
+
 # Drivers
 winget install Nvidia.GeForceExperience
 
