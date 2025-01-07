@@ -42,7 +42,7 @@ key-mapping.preset = 'qwerty'
 # Drop it from your config, if you don't like this behavior
 # See https://nikitabobko.github.io/AeroSpace/guide#on-focus-changed-callbacks
 # See https://nikitabobko.github.io/AeroSpace/commands#move-mouse
-on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+# on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 # on-focus-changed = "move-mouse window-lazy-center"
 
 # Gaps between windows (inner-*) and between monitor edges (outer-*).
@@ -213,4 +213,20 @@ run = "layout floating"
 
 [[on-window-detected]]
 if.app-id = 'com.presonus.ucapp'
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = 'com.presonus.ucapp'
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = 'com.apple.finder'
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = 'com.1password.1password'
+run = "layout floating"
+[[on-window-detected]]
+
+if.app-id = 'com.1password.1password'
 run = "layout floating"
