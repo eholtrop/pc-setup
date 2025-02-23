@@ -3,7 +3,7 @@
 # Reload whkd configuration
 # alt + o                 : taskkill /f /im whkd.exe && start /b whkd # if shell is cmd
 alt + o                 : taskkill /f /im whkd.exe; Start-Process whkd -WindowStyle hidden # if shell is pwsh / powershell
-# alt + f22 + o         : komorebic reload-configuration
+# alt + win + o         : komorebic reload-configuration
 
 # App shortcuts - these require shell to be pwsh / powershell
 # The apps will be focused if open, or launched if not open
@@ -11,24 +11,24 @@ alt + o                 : taskkill /f /im whkd.exe; Start-Process whkd -WindowSt
 # alt + b                 : if ($wshell.AppActivate('Chrome') -eq $False) { start chrome }
 
 # Focus windows
-ctrl + f22 + left         : komorebic cycle-focus previous
-ctrl + f22 + right        : komorebic cycle-focus next
-ctrl + f22 + down         : komorebic focus down
-ctrl + f22 + up           : komorebic focus up
-ctrl + f22 + return       : komorebic promote-focus
+ctrl + win + left         : komorebic cycle-focus previous
+ctrl + win + right        : komorebic cycle-focus next
+ctrl + win + down         : komorebic focus down
+ctrl + win + up           : komorebic focus up
+ctrl + win + return       : komorebic promote-focus
 
 # Move windows
-alt + f22 + left          : komorebic cycle-move previous
-alt + f22 + right         : komorebic cycle-move next
-alt + f22 + down          : komorebic move down
-alt + f22 + up            : komorebic move up
-alt + f22 + return        : komorebic promote
+alt + win + left          : komorebic cycle-move previous
+alt + win + right         : komorebic cycle-move next
+alt + win + down          : komorebic move down
+alt + win + up            : komorebic move up
+alt + win + return        : komorebic promote
 
 # Move windows across monitors
-ctrl + alt + f22 + left : komorebic cycle-move-to-monitor previous
-ctrl + alt + f22 + right : komorebic cycle-move-to-monitor next
-ctrl + alt + f22 + down : komorebic toggle-float
-ctrl + alt + f22 + up : komorebic toggle-monocle
+ctrl + alt + win + left : komorebic cycle-move-to-monitor previous
+ctrl + alt + win + right : komorebic cycle-move-to-monitor next
+ctrl + alt + win + down : komorebic toggle-float
+ctrl + alt + win + up : komorebic toggle-monocle
 
 # Stack windows
 # alt + left              : komorebic stack left
@@ -42,13 +42,13 @@ ctrl + alt + f22 + up : komorebic toggle-monocle
 # Resize
 alt + oem_plus          : komorebic resize-axis horizontal increase
 alt + oem_minus         : komorebic resize-axis horizontal decrease
-alt + f22 + oem_plus  : komorebic resize-axis vertical increase
-alt + f22 + oem_minus : komorebic resize-axis vertical decrease
+alt + win + oem_plus  : komorebic resize-axis vertical increase
+alt + win + oem_minus : komorebic resize-axis vertical decrease
 
 # Manipulate windows
 
 # Window manager options
-alt + f22 + r         : komorebic retile
+alt + win + r         : komorebic retile
 alt + p                 : komorebic toggle-pause
 
 # Layouts
@@ -66,11 +66,12 @@ alt + 7                 : komorebic focus-workspace 6
 alt + 8                 : komorebic focus-workspace 7
 
 # Move windows across workspaces
-alt + f22 + 1         : komorebic move-to-workspace 0
-alt + f22 + 2         : komorebic move-to-workspace 1
-alt + f22 + 3         : komorebic move-to-workspace 2
-alt + f22 + 4         : komorebic move-to-workspace 3
-alt + f22 + 5         : komorebic move-to-workspace 4
-alt + f22 + 6         : komorebic move-to-workspace 5
-alt + f22 + 7         : komorebic move-to-workspace 6
-alt + f22 + 8         : komorebic move-to-workspace 7
+alt + win + 1         : komorebic move-to-workspace 0
+alt + win + 2         : komorebic move-to-workspace 1
+alt + win + 3         : komorebic move-to-workspace 2
+alt + win + 4         : komorebic move-to-workspace 3
+alt + win + 5         : komorebic move-to-workspace 4
+alt + win + 6         : komorebic move-to-workspace 5
+alt + win + 7         : komorebic move-to-workspace 6
+alt + win + 8         : komorebic move-to-workspace 7
+ 
