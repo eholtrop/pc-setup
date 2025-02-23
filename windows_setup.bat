@@ -2,23 +2,22 @@
 winget install "Flow Launcher"
 winget install CodeSector.TeraCopy
 winget install voidtools.Everything
+winget install Zen-Team.Zen-Browser
 winget install Microsoft.PowerToys
 winget install REALiX.HWiNFO
 winget install localsend
 winget install Obsidian.Obsidian
+winget install RARLab.WinRAR
 
+# Streaming
 winget install OBSProject.OBSStudio
 
 # terminal
 winget install wez.wezterm
-
 winget install eza-community.eza
-
-
-
 winget install ajeetdsouza.zoxide
 
-# Streaming
+# Programming
 winget install Jetbrains.Toolbox
 winget install Axosoft.GitKraken
 winget install Microsoft.VisualStudioCode

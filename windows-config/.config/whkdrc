@@ -3,7 +3,7 @@
 # Reload whkd configuration
 # alt + o                 : taskkill /f /im whkd.exe && start /b whkd # if shell is cmd
 alt + o                 : taskkill /f /im whkd.exe; Start-Process whkd -WindowStyle hidden # if shell is pwsh / powershell
-# alt + shift + o         : komorebic reload-configuration
+# alt + f22 + o         : komorebic reload-configuration
 
 # App shortcuts - these require shell to be pwsh / powershell
 # The apps will be focused if open, or launched if not open
@@ -11,24 +11,24 @@ alt + o                 : taskkill /f /im whkd.exe; Start-Process whkd -WindowSt
 # alt + b                 : if ($wshell.AppActivate('Chrome') -eq $False) { start chrome }
 
 # Focus windows
-ctrl + shift + left         : komorebic cycle-focus previous
-ctrl + shift + right        : komorebic cycle-focus next
-ctrl + shift + down         : komorebic focus down
-ctrl + shift + up           : komorebic focus up
-ctrl + shift + return       : komorebic promote-focus
+ctrl + f22 + left         : komorebic cycle-focus previous
+ctrl + f22 + right        : komorebic cycle-focus next
+ctrl + f22 + down         : komorebic focus down
+ctrl + f22 + up           : komorebic focus up
+ctrl + f22 + return       : komorebic promote-focus
 
 # Move windows
-alt + shift + left          : komorebic cycle-move previous
-alt + shift + right         : komorebic cycle-move next
-alt + shift + down          : komorebic move down
-alt + shift + up            : komorebic move up
-alt + shift + return        : komorebic promote
+alt + f22 + left          : komorebic cycle-move previous
+alt + f22 + right         : komorebic cycle-move next
+alt + f22 + down          : komorebic move down
+alt + f22 + up            : komorebic move up
+alt + f22 + return        : komorebic promote
 
 # Move windows across monitors
-ctrl + alt + shift + left : komorebic cycle-move-to-monitor previous
-ctrl + alt + shift + right : komorebic cycle-move-to-monitor next
-ctrl + alt + shift + down : komorebic toggle-float
-ctrl + alt + shift + up : komorebic toggle-monocle
+ctrl + alt + f22 + left : komorebic cycle-move-to-monitor previous
+ctrl + alt + f22 + right : komorebic cycle-move-to-monitor next
+ctrl + alt + f22 + down : komorebic toggle-float
+ctrl + alt + f22 + up : komorebic toggle-monocle
 
 # Stack windows
 # alt + left              : komorebic stack left
@@ -42,13 +42,13 @@ ctrl + alt + shift + up : komorebic toggle-monocle
 # Resize
 alt + oem_plus          : komorebic resize-axis horizontal increase
 alt + oem_minus         : komorebic resize-axis horizontal decrease
-alt + shift + oem_plus  : komorebic resize-axis vertical increase
-alt + shift + oem_minus : komorebic resize-axis vertical decrease
+alt + f22 + oem_plus  : komorebic resize-axis vertical increase
+alt + f22 + oem_minus : komorebic resize-axis vertical decrease
 
 # Manipulate windows
 
 # Window manager options
-alt + shift + r         : komorebic retile
+alt + f22 + r         : komorebic retile
 alt + p                 : komorebic toggle-pause
 
 # Layouts
@@ -66,11 +66,11 @@ alt + 7                 : komorebic focus-workspace 6
 alt + 8                 : komorebic focus-workspace 7
 
 # Move windows across workspaces
-alt + shift + 1         : komorebic move-to-workspace 0
-alt + shift + 2         : komorebic move-to-workspace 1
-alt + shift + 3         : komorebic move-to-workspace 2
-alt + shift + 4         : komorebic move-to-workspace 3
-alt + shift + 5         : komorebic move-to-workspace 4
-alt + shift + 6         : komorebic move-to-workspace 5
-alt + shift + 7         : komorebic move-to-workspace 6
-alt + shift + 8         : komorebic move-to-workspace 7
+alt + f22 + 1         : komorebic move-to-workspace 0
+alt + f22 + 2         : komorebic move-to-workspace 1
+alt + f22 + 3         : komorebic move-to-workspace 2
+alt + f22 + 4         : komorebic move-to-workspace 3
+alt + f22 + 5         : komorebic move-to-workspace 4
+alt + f22 + 6         : komorebic move-to-workspace 5
+alt + f22 + 7         : komorebic move-to-workspace 6
+alt + f22 + 8         : komorebic move-to-workspace 7
