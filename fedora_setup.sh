@@ -1,11 +1,11 @@
-#!/bin/zsh
+#!/bin/bash
 
 install () {
     sudo dnf install -y $1
 }
 
 flatInstall () {
-    flatpak install -y flathub $1
+    flatpak install -y -u flathub $1
 }
 
 install zsh
@@ -31,16 +31,18 @@ install 1password
 flatInstall io.github.zen_browser.zen
 flatInstall com.axosoft.GitKraken
 flatInstall com.discordapp.Discord
-flatInstall com.spotify.client
+flatInstall com.spotify.Client
 flatInstall md.obsidian.Obsidian
 flatInstall dev.zed.Zed
+flatInstall com.core447.StreamController
+flatInstall com.obsproject.Studio
 
 flatInstall org.wezfurlong.wezterm
 rm ~/.wezterm.lua
 cp .wezterm.lua ~/
 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-# install font-meslo-lg-nerd-font
+install font-meslo-lg-nerd-font
 
 # fix history
 rm ~/.zshrc
